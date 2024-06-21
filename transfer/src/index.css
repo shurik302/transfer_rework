@@ -6,3 +6,10 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+:root {
+  --blue: #1e92ff;
+  --dark-blue: #2356ff;
+  --gray: #cecece;
+  --dark-gray: #a3a3a3;
+}
