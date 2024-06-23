@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -7,9 +7,74 @@
   font-variation-settings: "wdth" 100;
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* ДОКА ПО ROOT
+mtc - main text color - для текста 
+
+mtcd - main text color dark - для текста темный 
+
+mfs - main font size - размер шрифта для большинства текстов 
+
+mbfs - main big font size - увеличеный размер шрифта для текста
+*/
+
 :root {
+  --mtc: #ffffff;
+  --mtcd: #2356ff;
   --blue: #1e92ff;
   --dark-blue: #2356ff;
+  --light-gray: #EFEFEF;
   --gray: #cecece;
   --dark-gray: #a3a3a3;
+}
+
+@media (max-width:1920px) {
+  :root{
+    --mfs: 20px;
+    --mbfs: 32px;
+  }
+}
+
+@media (max-width:1440px) {
+  :root{
+    --mfs: 18px;
+    --mbfs: 28px;
+  }
+}
+
+@media (max-width:1024px) {
+  :root{
+    --mfs: 16px;
+    --mbfs: 24px;
+  }
+}
+
+@media (max-width:1024px) {
+  :root{
+    --mfs: 14px;
+    --mbfs: 20px;
+  }
+}
+
+@media (max-width:425px) {
+  :root{
+    --mfs: 12px;
+    --mbfs: 16px;
+  }
+}
+
+@media (max-width:320px) {
+  :root{
+    --mfs: 10px;
+    --mbfs: 14px;
+  }
 }
