@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../stylesheets/Navigation.css';
-import LanguageSwitcher from '../components/LanguageSwitcher';
+import '../stylesheets/Header.css';
+import LanguageSwitcher from './LanguageSwitcher';
 import LogoBig from '../images/logo_big.png';
 import { useTranslation } from 'react-i18next';
 

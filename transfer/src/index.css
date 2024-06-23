@@ -43,7 +43,9 @@ a:hover * {
 /* ДОКА ПО ROOT
 mtc - main text color - для текста 
 
-mtcd - main text color dark - для текста темный 
+mtcd - main text color dark - для текста темный
+
+mls - main little size - размер шрифта для маленького текста
 
 mfs - main font size - размер шрифта для большинства текстов 
 
@@ -62,6 +64,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
 
 @media (max-width:1920px) {
   :root{
+    --mls: 16px;
     --mfs: 20px;
     --mbfs: 32px;
   }
@@ -69,6 +72,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
 
 @media (max-width:1440px) {
   :root{
+    --mls: 14px;
     --mfs: 18px;
     --mbfs: 28px;
   }
@@ -76,6 +80,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
 
 @media (max-width:1024px) {
   :root{
+    --mls: 12px;
     --mfs: 16px;
     --mbfs: 24px;
   }
@@ -83,6 +88,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
 
 @media (max-width:1024px) {
   :root{
+    --mls: 10px;
     --mfs: 14px;
     --mbfs: 20px;
   }
@@ -90,6 +96,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
 
 @media (max-width:425px) {
   :root{
+    --mls: 8px;
     --mfs: 12px;
     --mbfs: 16px;
   }
@@ -97,6 +104,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
 
 @media (max-width:320px) {
   :root{
+    --mls: 6px;
     --mfs: 10px;
     --mbfs: 14px;
   }
