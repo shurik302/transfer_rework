@@ -51,13 +51,13 @@ const LanguageSwitcher = () => {
 			{menuVisible && (
 				<div className='HideMenu'>
 					<button onClick={() => changeLanguage('en')}>
-						<div className='Flag'>
+						<div className='FlagHideMenu'>
 							<img className='ChooseFlag' src={EngFlag} alt='Current Language Flag' />
 						</div>
 						<span className='EngTranslation'>English</span>
 					</button>
 					<button onClick={() => changeLanguage('ua')}>
-						<div className='Flag'>
+						<div className='FlagHideMenu'>
 							<img className='ChooseFlag' src={UaFlag} alt='Current Language Flag' />
 						</div>
 						<span className='UkrTranslation'>Українська</span>

@@ -33,14 +33,21 @@ function Navigation() {
     return (
         <div className="Navigation">
             <div className="Logo">
-                <img src={LogoBig} alt="Logo" />
+                <a href="/">
+                    <img src={LogoBig} alt="Logo" />
+                </a>
             </div>
 
-            <div className={`links ${menuVisible ? 'visible' : ''}`} ref={menuRef}>
-                <span>{t('F_Link')}</span>
-                <span>{t('S_Link')}</span>
-                <span>{t('T_Link')}</span>
-                <span>{t('Th_Link')}</span>
+            <div className={`links-container ${menuVisible ? 'visible' : ''}`} ref={menuRef}>
+                <div className="close-button" onClick={() => setMenuVisible(false)}>
+                    <i className="fa-solid fa-times"></i>
+                </div>
+                <div className="links">
+                    <a href="#link1">{t('F_Link')}</a>
+                    <a href="#link2">{t('S_Link')}</a>
+                    <a href="#link3">{t('T_Link')}</a>
+                    <a href="#link4">{t('Th_Link')}</a>
+                </div>
             </div>
 
             <div className='UserAndLang'>
@@ -51,7 +58,7 @@ function Navigation() {
                         </a>
                     </div>
                     <div className='Logged'>
-                        {/* Залогиненный контент */}
+                        {/* Залогінений контент */}
                     </div>
                 </div>
                 <div className="LanguageSwitcher">

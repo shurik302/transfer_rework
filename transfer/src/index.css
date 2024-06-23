@@ -17,6 +17,29 @@ html {
     width: 100%;
 }
 
+a, i {
+  text-decoration: none !important;
+  color: var(--mtc) !important;
+  transition: color 0.5s !important;
+}
+
+a:hover, i:hover {
+  color: var(--gray) !important;
+  transition: color 0.5s !important;
+}
+
+/* Застосування кольору для всіх дочірніх елементів всередині посилання */
+a * {
+  text-decoration: none !important;
+  color: var(--mtc) !important;
+  transition: color 0.5s !important;
+}
+
+a:hover * {
+  color: var(--gray) !important;
+  transition: color 0.5s !important;
+}
+
 /* ДОКА ПО ROOT
 mtc - main text color - для текста 
 
