@@ -1,0 +1,74 @@
+.picking-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.picking-select {
+  width: 150px;
+}
+
+.picking-datepicker {
+  width: 150px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--gray);
+}
+
+.picking-passengers {
+  display: flex;
+  align-items: center;
+}
+
+.picking-passengers button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: var(--blue);
+  color: var(--mtc);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.picking-passengers input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+.picking-luggage {
+  display: flex;
+  align-items: center;
+}
+
+.picking-luggage label {
+  margin-left: 10px;
+  color: var(--mtcd);
+}
+
+.picking-luggage select {
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid var(--gray);
+}
+
+.picking-search {
+  background-color: var(--blue);
+  color: var(--mtc);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.picking-search:hover {
+  background-color: var(--dark-blue);
+}
