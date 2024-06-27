@@ -50,11 +50,16 @@ mls - main little size - размер шрифта для маленького �
 mfs - main font size - размер шрифта для большинства текстов 
 
 mbfs - main big font size - увеличеный размер шрифта для текста
+
+mbc - main background color
+
 */
+
 
 :root {
   --mtc: #ffffff;
   --mtcd: #2356ff;
+  --mbc: #ffffff;
   --blue: #1e92ff;
   --dark-blue: #2356ff;
   --light-gray: #EFEFEF;
@@ -67,6 +72,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
     --mls: 16px;
     --mfs: 20px;
     --mbfs: 32px;
+    --vbfs: 46px;
   }
 }
 
@@ -75,6 +81,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
     --mls: 14px;
     --mfs: 18px;
     --mbfs: 28px;
+    --vbfs: 42px;
   }
 }
 
@@ -83,6 +90,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
     --mls: 12px;
     --mfs: 16px;
     --mbfs: 24px;
+    --vbfs: 38px;
   }
 }
 
@@ -91,6 +99,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
     --mls: 10px;
     --mfs: 14px;
     --mbfs: 20px;
+    --vbfs: 34px;
   }
 }
 
@@ -99,6 +108,7 @@ mbfs - main big font size - увеличеный размер шрифта дл�
     --mls: 8px;
     --mfs: 12px;
     --mbfs: 16px;
+    --vbfs: 32px;
   }
 }
 
@@ -107,5 +117,6 @@ mbfs - main big font size - увеличеный размер шрифта дл�
     --mls: 6px;
     --mfs: 10px;
     --mbfs: 14px;
+    --vbfs: 24px;
   }
 }

@@ -1,19 +1,29 @@
 .picking-container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
   padding: 20px;
+  color: var(--blue);
   background-color: var(--light-gray);
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.picking-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Додаємо це, щоб розмістити елементи */
+  align-items: flex-start;
+  width: 200px;
+  height: 70px; /* Висота контейнера */
+}
+
 .picking-select {
-  width: 150px;
+  width: 100%;
 }
 
 .picking-datepicker {
-  width: 150px;
+  width: 100%;
   padding: 8px;
   border-radius: 4px;
   border: 1px solid var(--gray);
@@ -21,11 +31,14 @@
 
 .picking-passengers {
   display: flex;
-  align-items: center;
+  flex-direction: row; /* Вертикальне вирівнювання */
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .picking-passengers button {
-  width: 30px;
+  width: 20%;
   height: 30px;
   border: none;
   background-color: var(--blue);
@@ -35,34 +48,19 @@
 }
 
 .picking-passengers input {
-  width: 50px;
+  width: 40%;
   text-align: center;
   border: 1px solid var(--gray);
   border-radius: 4px;
-  margin: 0 10px;
-}
-
-.picking-luggage {
-  display: flex;
-  align-items: center;
-}
-
-.picking-luggage label {
-  margin-left: 10px;
-  color: var(--mtcd);
-}
-
-.picking-luggage select {
-  margin-left: 5px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid var(--gray);
+  height: 30px;
 }
 
 .picking-search {
   background-color: var(--blue);
   color: var(--mtc);
-  padding: 10px 20px;
+  padding: 10px 40px;
+  height: 40px;
+  width: 170px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
