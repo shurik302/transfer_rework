@@ -1,8 +1,8 @@
 {
-  "F_Link": "Всі напрямки",
-  "S_Link": "Всі напрямки",
+  "F_Link": "Карта",
+  "S_Link": "Мої подорожі",
   "T_Link": "Всі напрямки",
-  "Th_Link": "Всі напрямки",
+  "Th_Link": "Допомога та сервіс",
   "CurrentTranslation": "Українська",
   "MiddleColumnNameFooter": "Посилання",
   "MiddleRightColumnNameFooter": "Допомога та зв'язок",
@@ -16,5 +16,11 @@
   "LuggageStatusNo": "Ні",
   "LuggageStatusYes": "Так",
   "Search":"Пошук",
+  "Berlin": "Берлін",
+  "Düsseldorf": "Дюссельдорф",
+  "Kyiv": "Київ",
+  "Warsaw": "Варшава",
+  "Paris": "Париж",
+  "London": "Лондон",
   "": ""
 }

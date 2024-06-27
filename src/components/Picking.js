@@ -1,17 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
-import DatePicker from 'react-datepicker';
+import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import '../stylesheets/Picking.css';
 import cities from '../db/Cities.json';
 import { useTranslation } from 'react-i18next';
+import uk from 'date-fns/locale/uk';
+import enUS from 'date-fns/locale/en-US';
+
+registerLocale('uk', uk);
+registerLocale('en', enUS);
 
 const Picking = () => {
-  const { t } = useTranslation();
-  const [from, setFrom] = useState({ value: 'Kyiv', label: 'Kyiv' });
-  const [to, setTo] = useState({ value: 'Warsaw', label: 'Warsaw' });
+  const { t, i18n } = useTranslation();
+  const [from, setFrom] = useState({ value: 'Kyiv', label: t('Kyiv') });
+  const [to, setTo] = useState({ value: 'Warsaw', label: t('Warsaw') });
   const [startDate, setStartDate] = useState(new Date());
   const [passengers, setPassengers] = useState(1);
+  const [locale, setLocale] = useState('uk');
+
+  useEffect(() => {
+    if (i18n.language === 'ua') {
+      setLocale('uk');
+    } else {
+      setLocale('en');
+    }
+  }, [i18n.language]);
 
   const handlePassengersChange = (event) => {
     let value = parseInt(event.target.value, 10);
@@ -19,6 +33,11 @@ const Picking = () => {
     if (value > 120) value = 120;
     setPassengers(value);
   };
+
+  const cityOptions = cities.map(city => ({
+    value: city.value,
+    label: t(city.value)
+  }));
 
   return (
     <div className="picking-container">
@@ -28,7 +47,7 @@ const Picking = () => {
           className="picking-select"
           value={from}
           onChange={setFrom}
-          options={cities}
+          options={cityOptions}
         />
       </div>
       <div className="picking-field">
@@ -37,7 +56,7 @@ const Picking = () => {
           className="picking-select"
           value={to}
           onChange={setTo}
-          options={cities}
+          options={cityOptions}
         />
       </div>
       <div className="picking-field">
@@ -47,6 +66,7 @@ const Picking = () => {
           selected={startDate}
           onChange={(date) => setStartDate(date)}
           dateFormat="dd MMM yyyy"
+          locale={locale}
         />
       </div>
       <div className="picking-field">
