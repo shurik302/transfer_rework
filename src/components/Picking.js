@@ -39,51 +39,90 @@ const Picking = () => {
     label: t(city.value)
   }));
 
+  const swapCities = () => {
+    const temp = from;
+    setFrom(to);
+    setTo(temp);
+  };
+
   return (
     <div className="picking-container">
-      <div className="picking-field">
-        <label>{t('From')}</label>
-        <Select
-          className="picking-select"
-          value={from}
-          onChange={setFrom}
-          options={cityOptions}
-        />
-      </div>
-      <div className="picking-field">
-        <label>{t('To')}</label>
-        <Select
-          className="picking-select"
-          value={to}
-          onChange={setTo}
-          options={cityOptions}
-        />
-      </div>
-      <div className="picking-field">
-        <label>{t('Departure')}</label>
-        <DatePicker
-          className="picking-datepicker"
-          selected={startDate}
-          onChange={(date) => setStartDate(date)}
-          dateFormat="dd MMM yyyy"
-          locale={locale}
-        />
-      </div>
-      <div className="picking-field">
-        <label>{t('Passengers')}</label>
-        <div className="picking-passengers">
-          <button onClick={() => setPassengers(Math.max(passengers - 1, 1))}>-</button>
-          <input
-            type="number"
-            value={passengers}
-            onChange={handlePassengersChange}
-            min="1"
-            max="120"
+      <div className="from-to-container">
+        <div className="picking-field from-field">
+          <label>{t('From')}</label>
+          <Select
+            className="picking-select"
+            value={from}
+            onChange={setFrom}
+            options={cityOptions}
+            components={{ DropdownIndicator: () => null, IndicatorSeparator: () => null }}
+            styles={{
+              control: (provided) => ({
+                ...provided,
+                paddingRight: '40px', // Add padding to the right
+              }),
+              singleValue: (provided) => ({
+                ...provided,
+                marginRight: '40px', // Add margin to the right for the button
+              })
+            }}
           />
-          <button onClick={() => setPassengers(Math.min(passengers + 1, 120))}>+</button>
+        </div>
+        <button className="swap-button" onClick={swapCities}>
+          &#x21C4;
+        </button>
+        <div className="picking-field to-field">
+          <label>{t('To')}</label>
+          <Select
+            className="picking-select"
+            value={to}
+            onChange={setTo}
+            options={cityOptions}
+            components={{ DropdownIndicator: () => null, IndicatorSeparator: () => null }}
+            styles={{
+              control: (provided) => ({
+                ...provided,
+                paddingRight: '40px', // Add padding to the right
+              }),
+              singleValue: (provided) => ({
+                ...provided,
+                marginRight: '40px', // Add margin to the right for the button
+              }),
+              input: (provided) => ({
+                ...provided,
+                textIndent: '29px' // Shift input text to the right
+              })
+            }}
+          />
         </div>
       </div>
-      <button className="picking-search">{t('Search')}</button>
+      <div className="additional-fields">
+        <div className="picking-field">
+          <label>{t('Departure')}</label>
+          <DatePicker
+            className="picking-datepicker"
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+            dateFormat="dd MMM yyyy"
+            locale={locale}
+          />
+        </div>
+        <div className="picking-field">
+          <label>{t('Passengers')}</label>
+          <div className="picking-passengers">
+            <button onClick={() => setPassengers(Math.max(passengers - 1, 1))}>-</button>
+            <input
+              type="number"
+              value={passengers}
+              onChange={handlePassengersChange}
+              min="1"
+              max="120"
+            />
+            <button onClick={() => setPassengers(Math.min(passengers + 1, 120))}>+</button>
+          </div>
+        </div>
+        <button className="picking-search">{t('Search')}</button>
+      </div>
     </div>
   );
 };
