@@ -88,6 +88,97 @@
     box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
 }
 
+.AdditionalDescriptions {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 30px;
+}
+
+.AdditionalDescr {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.TextAddLink {
+    color: var(--mtcb) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.AdditionalDescr i {
+    font-size: calc(var(--vbfs) + 4px);
+    color: var(--light-black) !important;
+
+}
+
+.TextAddLink span:nth-child(1) {
+    font-size: calc(var(--mbfs) - 4px);
+    font-weight: 400;
+}
+
+.TextAddLink span:nth-child(2) {
+    font-size: calc(var(--mfs) - 2px);
+}
+
+.MapSegment {
+    margin-top: 60px;
+    width: calc(100% + 0px);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: var(--gray);
+    transform: translateX(-20px);
+    padding: 0 20px;
+}
+
+.ImageMap {
+    width: 160px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.ImageMap img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.TextMapSeg {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--mtcb);
+}
+
+.TextMapSeg span {
+    color: var(--mtcb) !important;
+    font-weight: 500;
+}
+
+
+.TextMapSeg i {
+    color: var(--mtcb) !important;
+}
+
+.MainNameMapSeg {
+    font-size: var(--mbfs);
+}
+
+.SecNameMapSeg {
+    font-size: var(--mfs);
+}
+
 @media (max-width:1440px) {
     .AddLink span {
         color: var(--mtcb) !important;
@@ -100,9 +191,62 @@
         font-size: calc(var(--mfs) - 4px);
     }
 
+    .AdditionalDescriptions {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .AdditionalDescr:nth-child(1),
+    .AdditionalDescr:nth-child(3) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: start;
+        text-align: start;
+        gap: 20px;
+    }
+
+    .AdditionalDescr:nth-child(2),
+    .AdditionalDescr:nth-child(4) {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: end;
+        text-align: start;
+        gap: 0px;
+    }
+
+    .AdditionalDescr:nth-child(1) .TextAddLink,
+    .AdditionalDescr:nth-child(3) .TextAddLink {
+        align-items: flex-start;
+
+    }
+
+    .AdditionalDescr:nth-child(2) .TextAddLink,
+    .AdditionalDescr:nth-child(4) .TextAddLink {
+        align-items: flex-end;
+    }
+
+    .AdditionalDescr:nth-child(2) .TextAddLink span:nth-child(2),
+    .AdditionalDescr:nth-child(4) .TextAddLink span:nth-child(2) {
+        display: flex;
+        justify-content: end;
+    }
+
+
+
+    .AdditionalDescr span {
+        width: 60%;
+    }
+
+    .AdditionalDescr i {
+        font-size: 40px;
+    }
 }
 
 @media (max-width:1024px) {
+    .AdditionalDescr span {
+        width: 70%;
+    }
+
     .PickingPart {
         margin-top: 60px;
     }
@@ -117,12 +261,31 @@
     .AddLink {
         width: auto;
     }
+
+
 }
 
 @media (max-width:768px) {
+    .MapSegment {
+        width: calc(100% + 40px);
+        padding: 0;
+        margin-bottom: 60px;
+
+    }
+
+
+    .MainNameMapSeg {
+        font-size: calc(var(--mbfs) - 2px);
+    }
+
+    .SecNameMapSeg {
+        font-size: calc(var(--mfs) - 4px);
+    }
+
     .PickingPart {
         margin-top: 40px;
     }
+
     .AdditionalLinks {
         display: flex;
         flex-direction: column;
@@ -148,10 +311,79 @@
         justify-content: center;
         width: 20px;
     }
-}
 
-@media (max-width:768px) {
     .PickingPart {
         margin-top: 30px;
     }
+
+
+}
+
+
+@media (max-width:426px) {
+    .MapSegment {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        background-color: var(--light-gray);
+        gap: 5px;
+
+    }
+
+    .MainNameMapSeg {
+        font-size: calc(var(--mbfs) + 4px) !important;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: flex-end;
+    }
+
+    .MainNameMapSeg span i{
+        font-size: calc(var(--mbfs) + 4px) !important;
+    }
+
+    .SecNameMapSeg {
+        display: none;
+    }
+
+
+    .ImageMap {
+        width: 100%;
+        height: auto;
+    }
+
+    .SecNameMapSeg {
+        font-size: calc(var(--mfs) + 2px);
+    }
+
+
+    .PickingPart {
+        margin-top: 30px;
+    }
+
+    .AdditionalDescriptions {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .AdditionalDescr {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 10px !important;
+    }
+
+    .AdditionalDescr span {
+        width: 100%;
+    }
+
+    .TextAddLink span:nth-child(1) {
+        font-size: calc(var(--mbfs) + 4px);
+    }
+
+    .TextAddLink span:nth-child(2) {
+        font-size: calc(var(--mfs));
+    }
+
 }

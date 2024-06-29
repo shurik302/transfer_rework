@@ -1,7 +1,8 @@
 import React from 'react';
 import Picking from '../components/Picking';
 import { useTranslation } from 'react-i18next';
-import '../stylesheets/Home.css'
+import '../stylesheets/Home.css';
+import ImageMap from '../background_images/ImageMap.png';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -36,12 +37,54 @@ const Home = () => {
               <span>{t('FourthAddLink')}</span>
             </a>
           </div>
+          <a href='' className='MapSegment'>
+            <div className='ImageMap'>
+              <img src={ImageMap} />
+            </div>
+            <div className='TextMapSeg'>
+              <span className='MainNameMapSeg'>
+                {t('MainNameMapSeg')}
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+              <span className='SecNameMapSeg'>
+                {t('SecNameMapSeg')}
+              </span>
+            </div>
+          </a>
+          <div className='AdditionalDescriptions'>
+            <div className='AdditionalDescr FirstAddDesc'>
+              <i class="fa-solid fa-bus"></i>
+              <div className='TextAddLink'>
+                <span>{t('NameFirstAddDesc')}</span>
+                <span>{t('FirstAddDesc')}</span>
+              </div>
+            </div>
+            <div className='AdditionalDescr SecondAddDesc'>
+              <i class="fa-solid fa-right-left"></i>
+              <div className='TextAddLink'>
+                <span>{t('NameSecondAddDesc')}</span>
+                <span>{t('SecondAddDesc')}</span>
+              </div>
+            </div>
+            <div className='AdditionalDescr ThirdAddDesc'>
+              <i class="fa-solid fa-shield"></i>
+              <div className='TextAddLink'>
+                <span>{t('NameThirdAddDesc')}</span>
+                <span>{t('ThirdAddDesc')}</span>
+              </div>
+            </div>
+            <div className='AdditionalDescr FourthAddDesc'>
+              <i class="fa-solid fa-money-check-dollar"></i>
+              <div className='TextAddLink'>
+                <span>{t('NameFourthAddDesc')}</span>
+                <span>{t('FourthAddDesc')}</span>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-
     </div>
-  )
+  );
 };
 
 export default Home;

@@ -26,5 +26,14 @@
   "SecondAddLink": "SecondAddLink",
   "ThirdAddLink": "ThirdAddLink",
   "FourthAddLink": "FourthAddLink",
-  "": ""
+  "NameFirstAddDesc": "Reliable Service",
+  "FirstAddDesc": "Our buses run on time, ensuring you reach your destination without delay. Trust us for a punctual and dependable service.",
+  "NameSecondAddDesc": "Comfortable Rides",
+  "SecondAddDesc": "Experience the utmost comfort with our modern, well-maintained buses. Enjoy spacious seating and air conditioning on all routes.",
+  "NameThirdAddDesc": "Safe Travels",
+  "ThirdAddDesc": "Your safety is our priority. Our buses are equipped with the latest safety features and our drivers are highly trained professionals.",
+  "NameFourthAddDesc": "Affordable Prices",
+  "FourthAddDesc": "Travel without breaking the bank. We offer competitive prices and various discounts to make your journey affordable and enjoyable.",
+  "MainNameMapSeg": "Check out the map",
+  "SecNameMapSeg": "Here you can find all cities and destinations"
 }
