@@ -15,12 +15,16 @@
   "Luggage": "Додатковий багаж",
   "LuggageStatusNo": "Ні",
   "LuggageStatusYes": "Так",
-  "Search":"Пошук",
+  "Search": "Пошук",
   "Berlin": "Берлін",
   "Düsseldorf": "Дюссельдорф",
   "Kyiv": "Київ",
   "Warsaw": "Варшава",
   "Paris": "Париж",
   "London": "Лондон",
+  "FirstAddLink": "Мої квитки",
+  "SecondAddLink": "Напрямки",
+  "ThirdAddLink": "Питання та відповіді",
+  "FourthAddLink": "Допомога",
   "": ""
 }

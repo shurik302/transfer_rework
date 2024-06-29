@@ -58,6 +58,7 @@ mbc - main background color
 
 :root {
   --mtc: #ffffff;
+  --mtcb: #000000;
   --mtcd: #2356ff;
   --mbc: #ffffff;
   --blue: #1e92ff;
