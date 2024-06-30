@@ -20,37 +20,44 @@ const Home = () => {
         </div>
         <div className='InfoAndLinks'>
           <div className='AdditionalLinks'>
-            <a href='' className='FirstAddLink AddLink'>
+            <a href='#' className='FirstAddLink AddLink'>
               <i class="fa-solid fa-ticket"></i>
               <span>{t('FirstAddLink')}</span>
             </a>
-            <a href='' className='SecondAddLink AddLink'>
+            <a href='#' className='SecondAddLink AddLink'>
               <i class="fa-solid fa-route"></i>
               <span>{t('SecondAddLink')}</span>
             </a>
-            <a href='' className='ThirdAddLink AddLink'>
+            <a href='#' className='ThirdAddLink AddLink'>
               <i class="fa-solid fa-question"></i>
               <span>{t('ThirdAddLink')}</span>
             </a>
-            <a href='' className='ForthAddLink AddLink'>
+            <a href='#' className='ForthAddLink AddLink'>
               <i class="fa-solid fa-handshake-angle"></i>
               <span>{t('FourthAddLink')}</span>
             </a>
           </div>
-          <a href='' className='MapSegment'>
+          <div className='TR' />
+          <a href='#' className='MapSegment'>
             <div className='ImageMap'>
               <img src={ImageMap} />
             </div>
             <div className='TextMapSeg'>
-              <span className='MainNameMapSeg'>
-                {t('MainNameMapSeg')}
+              <div className='TextPartMap'>
+                <span className='MainNameMapSeg'>
+                  {t('MainNameMapSeg')}
+                </span>
+                <span className='SecNameMapSeg'>
+                  {t('SecNameMapSeg')}
+                </span>
+              </div>
+              <span className='AddNameMapSeg'>
+                {t('AddNameMapSeg')}
                 <i class="fa-solid fa-chevron-right"></i>
-              </span>
-              <span className='SecNameMapSeg'>
-                {t('SecNameMapSeg')}
               </span>
             </div>
           </a>
+          <div className='TR' />
           <div className='AdditionalDescriptions'>
             <div className='AdditionalDescr FirstAddDesc'>
               <i class="fa-solid fa-bus"></i>
@@ -81,6 +88,20 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className='DescriptionOfServices'>
+        <div className='TextDescSer'>
+          <span className='NameSer'>{t('NameSerF')}</span>
+          <span className='DescrSer'>{t('DescrSerF')}</span>
+        </div>
+        <div className='TextDescSer'>
+          <span className='NameSer'>{t('NameSerS')}</span>
+          <span className='DescrSer'>{t('DescrSerS')}</span>
+        </div>
+        <div className='TextDescSer'>
+          <span className='NameSer'>{t('NameSerT')}</span>
+          <span className='DescrSer'>{t('DescrSerT')}</span>
         </div>
       </div>
     </div>

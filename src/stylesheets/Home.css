@@ -11,6 +11,14 @@
     /* Позиціювання зображення по центру */
 }
 
+.TR {
+    background-color: var(--mbcg);
+    width: 100%;
+    height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .MainContent {
     padding: 0px 0px 40px 0px;
 }
@@ -136,14 +144,12 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    background-color: var(--gray);
     transform: translateX(-20px);
     padding: 0 20px;
 }
 
 .ImageMap {
-    width: 160px;
-    height: 90px;
+    height: 180px;
     object-fit: contain;
 }
 
@@ -154,11 +160,17 @@
 }
 
 .TextMapSeg {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: var(--mtcb);
+}
+
+.TextPartMap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .TextMapSeg span {
@@ -166,17 +178,53 @@
     font-weight: 500;
 }
 
-
-.TextMapSeg i {
-    color: var(--mtcb) !important;
+.MainNameMapSeg {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
+    font-size: var(--mbfs);
+    font-weight: 600 !important;
 }
 
-.MainNameMapSeg {
-    font-size: var(--mbfs);
+.AddNameMapSeg {
+    font-size: var(--mls);
+}
+
+.AddNameMapSeg i {
+    font-size: calc(var(--mls)) !important;
+    color: var(--mtcb) !important;
 }
 
 .SecNameMapSeg {
     font-size: var(--mfs);
+}
+
+.DescriptionOfServices {
+    background-color: var(--mbc);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--mtcb);
+}
+
+.TextDescSer {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.TextDescSer span:nth-child(1) {
+    font-size: var(--mbfs);
+    font-weight: 600;
+}
+
+.TextDescSer span:nth-child(2) {
+    font-size: var(--mfs);
+    font-weight: 400;
 }
 
 @media (max-width:1440px) {
@@ -266,20 +314,37 @@
 }
 
 @media (max-width:768px) {
-    .MapSegment {
-        width: calc(100% + 40px);
-        padding: 0;
-        margin-bottom: 60px;
+    .DescriptionOfServices {
+        gap: 0px;
+    }
 
+    .MapSegment {
+        flex-direction: column-reverse;
+        width: calc(100% + 0px);
+        padding: 0 20px;
+        margin: 30px 0px;
+
+    }
+
+    .TextMapSeg {
+        gap: 20px;
+    }
+
+    .TextPartMap {
+        gap: 2px;
+    }
+
+    .ImageMap {
+        height: auto;
     }
 
 
     .MainNameMapSeg {
-        font-size: calc(var(--mbfs) - 2px);
+        font-size: calc(var(--mbfs) + 4px);
     }
 
     .SecNameMapSeg {
-        font-size: calc(var(--mfs) - 4px);
+        font-size: calc(var(--mfs) + 0px);
     }
 
     .PickingPart {
@@ -321,30 +386,26 @@
 
 
 @media (max-width:426px) {
-    .MapSegment {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: center;
-        background-color: var(--light-gray);
-        gap: 5px;
-
+    .TextMapSeg {
+        gap: 15px;
     }
 
     .MainNameMapSeg {
-        font-size: calc(var(--mbfs) + 4px) !important;
+        font-size: calc(var(--mbfs) + 10px) !important;
         display: flex;
         flex-direction: row;
         gap: 5px;
         align-items: flex-end;
     }
 
-    .MainNameMapSeg span i{
-        font-size: calc(var(--mbfs) + 4px) !important;
+    .AddNameMapSeg {
+        font-size: var(--mfs);
     }
 
-    .SecNameMapSeg {
-        display: none;
+    .AddNameMapSeg i {
+        font-size: calc(var(--mfs) + 0px) !important;
     }
+
 
 
     .ImageMap {
@@ -384,6 +445,10 @@
 
     .TextAddLink span:nth-child(2) {
         font-size: calc(var(--mfs));
+    }
+
+    .TextMapSeg {
+        gap: 10px;
     }
 
 }
