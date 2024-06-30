@@ -1,6 +1,14 @@
 import React from 'react';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+/* PAGES */
 import Home from './pages/Home.js';
+import Map from './pages/Map.js';
+import Account from './pages/Account.js';
+import Help from './pages/Help.js';
+import Rules from './pages/Rules.js';
+import InfoAboutUs from './pages/InfoAboutUs.js';
+import PrivacyPolicy from './pages/PrivacyPolicy.js';
+/* COMPONENTS */
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './i18n';
@@ -9,7 +17,15 @@ import './i18n';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Home />} />
+      <>
+        <Route path="/" element={<Home />} />
+        <Route path="/map" element={<Map />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/rules" element={<Rules />} />
+        <Route path="/info-about-us" element={<InfoAboutUs />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </>
     )
   );
 

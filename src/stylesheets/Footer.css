@@ -140,7 +140,6 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease;
-        
         width: 100%;
     }
 

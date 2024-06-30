@@ -43,7 +43,7 @@ function Navigation() {
                     <i className="fa-solid fa-times"></i>
                 </div>
                 <div className="links">
-                    <a href="#link1">{t('F_Link')}</a>
+                    <a href="/map">{t('F_Link')}</a>
                     <a href="#link2">{t('S_Link')}</a>
                     <a href="#link3">{t('T_Link')}</a>
                     <a href="#link4">{t('Th_Link')}</a>
