@@ -10,6 +10,16 @@
   font-size: var(--mfs);
 }
 
+.picking-passengers input[type=number]::-webkit-outer-spin-button,
+.picking-passengers input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.picking-passengers input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .from-to-container {
   display: flex;
   align-items: flex-end;

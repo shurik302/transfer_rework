@@ -22,7 +22,7 @@
 
 .TextPartAbout {
     width: calc(70% + 0px);
-    padding: 60px 15%;
+    padding: 20px 15%;
     margin-top: 40px;
     border-radius: 8px;
     background-color: var(--mbc);
@@ -51,13 +51,13 @@
 @media (max-width:768px) {
     .TextPartAbout {
         width: calc(80% + 0px);
-        padding: 60px 10%;
+        padding: 20px 10%;
     }
 }
 
 @media (max-width:426px) {
     .TextPartAbout {
         width: calc(90% + 0px);
-        padding: 60px 5%;
+        padding: 20px 5%;
     }
 }
