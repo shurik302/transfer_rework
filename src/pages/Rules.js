@@ -1,8 +1,12 @@
 import React from 'react'
+import '../stylesheets/Rules.css'
+
 
 function Rules() {
   return (
-    <div>Rules</div>
+    <div className='Rules'>
+      <div className='MainContent'></div>
+    </div>
   )
 }
 

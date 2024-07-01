@@ -4,11 +4,8 @@
     color: var(--mtc);
     background-image: url('../background_images/pic-bus-1.png');
     background-size: cover;
-    /* Зображення покриває весь елемент */
     background-repeat: no-repeat;
-    /* Зображення не повторюється */
     background-position: center center;
-    /* Позиціювання зображення по центру */
 }
 
 .TR {

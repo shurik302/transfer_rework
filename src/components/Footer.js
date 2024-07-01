@@ -16,7 +16,7 @@ function Footer() {
       <div className='UpFooter'>
         <div className='LeftFoooter'>
           <div className='LogoFooter'>
-            <a href=''>
+            <a href='/'>
               <img src={LogoBig} alt='Logo' />
             </a>
           </div>
@@ -67,11 +67,11 @@ function Footer() {
       </div>
       <div className='DownFooter'>
         <div className='DLeftPartFooter'>
-          <a href=''><span>{t('Main_info')}</span></a>
+          <a href='/info-about-us'><span>{t('Main_info')}</span></a>
           <span>|</span>
-          <a href=''><span>{t('Passenger_rights_rules')}</span></a>
+          <a href='/rules'><span>{t('Passenger_rights_rules')}</span></a>
           <span>|</span>
-          <a href=''><span>{t('Privacy_policy')}</span></a>
+          <a href='/privacy-policy'><span>{t('Privacy_policy')}</span></a>
         </div>
         <div className='DRightPartFooter'>
           <span>Travel Bus</span>

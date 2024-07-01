@@ -44,21 +44,20 @@ function Navigation() {
                 </div>
                 <div className="links">
                     <a href="/map">{t('F_Link')}</a>
-                    <a href="#link2">{t('S_Link')}</a>
-                    <a href="#link3">{t('T_Link')}</a>
-                    <a href="#link4">{t('Th_Link')}</a>
+                    <a href="/travels">{t('S_Link')}</a>
+                    <a href="/routes">{t('T_Link')}</a>
+                    <a href="/help">{t('Th_Link')}</a>
                 </div>
             </div>
 
             <div className='UserAndLang'>
                 <div className='User'>
                     <div className='NotLogged'>
-                        <a href='#'>
+                        <a href='/account'>
                             <i className="fa-solid fa-user"></i>
                         </a>
                     </div>
                     <div className='Logged'>
-                        {/* Залогінений контент */}
                     </div>
                 </div>
                 <div className="LanguageSwitcher">

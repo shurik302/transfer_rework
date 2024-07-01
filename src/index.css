@@ -107,7 +107,7 @@ mbc - main background color
   }
 }
 
-@media (max-width:425px) {
+@media (max-width:426px) {
   :root{
     --mls: 8px;
     --mfs: 12px;

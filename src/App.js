@@ -3,6 +3,8 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 /* PAGES */
 import Home from './pages/Home.js';
 import Map from './pages/Map.js';
+import Travels from './pages/Travels.js';
+import Routes from './pages/Routes.js';
 import Account from './pages/Account.js';
 import Help from './pages/Help.js';
 import Rules from './pages/Rules.js';
@@ -20,6 +22,8 @@ function App() {
       <>
         <Route path="/" element={<Home />} />
         <Route path="/map" element={<Map />} />
+        <Route path="/travels" element={<Travels />} />
+        <Route path="/routes" element={<Routes />} />
         <Route path="/account" element={<Account />} />
         <Route path="/help" element={<Help />} />
         <Route path="/rules" element={<Rules />} />
