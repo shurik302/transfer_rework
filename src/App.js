@@ -10,6 +10,8 @@ import Help from './pages/Help.js';
 import Rules from './pages/Rules.js';
 import InfoAboutUs from './pages/InfoAboutUs.js';
 import PrivacyPolicy from './pages/PrivacyPolicy.js';
+import Authorisation from './pages/Authorisation.js';
+import Registration from './pages/Registration.js';
 /* COMPONENTS */
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -29,6 +31,8 @@ function App() {
         <Route path="/rules" element={<Rules />} />
         <Route path="/info-about-us" element={<InfoAboutUs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/Registration" element={<Registration />} />
+        <Route path="/Authorisation" element={<Authorisation />} />
       </>
     )
   );
