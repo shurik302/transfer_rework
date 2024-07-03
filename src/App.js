@@ -15,6 +15,7 @@ import Registration from './pages/Registration.js';
 /* COMPONENTS */
 import Header from './components/Header';
 import Footer from './components/Footer';
+import OnlineHelp from './components/OnlineHelp';
 import './i18n';
 
 
@@ -41,6 +42,7 @@ function App() {
     <div>
       <Header />
       <RouterProvider router={router} />
+      <OnlineHelp />
       <Footer />
     </div>
   );
