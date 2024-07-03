@@ -3,7 +3,7 @@
   "S_Link": "My trips",
   "T_Link": "All directions",
   "Th_Link": "Help and service",
-  "CurrentTranslation": "English",
+  "CurrentTranslation": "EN",
   "MiddleColumnNameFooter": "Links",
   "MiddleRightColumnNameFooter": "Help and contact",
   "RightColumnNameFooter": "We are on social media",
@@ -60,8 +60,14 @@
   "KeepConnected": "To continue, log in to your account, or if you do not have an account yet, register it.",
   "CreateAccount": "Create account",
   "Registration": "Registration",
-  "RegistrationButton":"Registration",
-  "WelcomeReg":"Welcome!",
-  "RegText":"If you don't have an account yet, please register here. Or if you already have an account, please sign in.",
-  "login":"Login"
+  "RegistrationButton": "Registration",
+  "WelcomeReg": "Welcome!",
+  "RegText": "If you don't have an account yet, please register here. Or if you already have an account, please sign in.",
+  "login": "Login",
+  "WelcomeTravel": "Welcome!",
+  "InformationTravels": "Your future travels:",
+  "InfoHaveNotTravels": "Sorry, you don't have any upcoming trips.",
+  "ProposeBuyTicket": "You can order tickets via the link below:",
+  "BuyTickets": "Buy tickets",
+  "ProposeLogin": "Login"
 }

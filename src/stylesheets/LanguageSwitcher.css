@@ -5,10 +5,11 @@
 .CurrentTranslation {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
     gap: 10px;
     cursor: pointer;
     margin-left: 4px;
-    width: 145px;
 }
 
 .Flag {

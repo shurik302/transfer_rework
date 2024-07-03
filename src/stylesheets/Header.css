@@ -63,6 +63,14 @@
     color: var(--mtc);
 }
 
+.NotLogged a {
+    display: block;
+}
+
+.NotLogged i{
+    display: none;
+}
+
 .BurgerButton {
     display: none;
     cursor: pointer;
@@ -191,5 +199,12 @@
         width: 130px !important;
     }
 
+    .NotLogged a {
+        display: none;
+    }
+    
+    .NotLogged i{
+        display: block;
+    }
 
 }
