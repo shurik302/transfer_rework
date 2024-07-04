@@ -25,11 +25,9 @@ function Authorisation() {
 			</div>
 
 			<div className='RightPart'>
-				<div className='Welcome'>
-					<h2>{t('WelcomeBack')}</h2>
-					<p>{t('KeepConnected')}</p>
-					<a href='/registration'>{t('CreateAccount')}</a>
-				</div>
+				<h2>{t('WelcomeBack')}</h2>
+				<p>{t('KeepConnected')}</p>
+				<a href='/registration'>{t('CreateAccount')}</a>
 			</div>
 		</div>
 	);

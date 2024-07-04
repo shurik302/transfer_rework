@@ -74,7 +74,7 @@ function Navigation() {
 					) : (
 						<div className='NotLogged'>
 							<a href='/Authorisation'>{t('ProposeLogin')}</a>
-							<i href='/Authorisation' className="fa-solid fa-user"></i>
+							<a href='/Authorisation'><i className="fa-solid fa-user"></i></a>
 						</div>
 					)}
 				</div>

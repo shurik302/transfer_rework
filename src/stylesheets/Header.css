@@ -63,11 +63,11 @@
     color: var(--mtc);
 }
 
-.NotLogged a {
+.NotLogged a:nth-child(1) {
     display: block;
 }
 
-.NotLogged i{
+.NotLogged a:nth-child(2){
     display: none;
 }
 
@@ -199,11 +199,11 @@
         width: 130px !important;
     }
 
-    .NotLogged a {
+    .NotLogged a:nth-child(1) {
         display: none;
     }
     
-    .NotLogged i{
+    .NotLogged a:nth-child(2){
         display: block;
     }
 

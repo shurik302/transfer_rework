@@ -1,8 +1,3 @@
-:root {
-	--dark-blue: #2356ff;
-	--dark-gray: #444444;
-}
-
 .OnlineHelp {
 	position: fixed;
 	bottom: 20px;
@@ -11,7 +6,7 @@
 }
 
 .HelpButton {
-	background-color: var(--dark-blue);
+	background-color: var(--blue);
 	border: none;
 	border-radius: 50%;
 	width: 50px;
@@ -34,7 +29,7 @@
 	width: 250px;
 	height: 400px;
 	background-color: white;
-	border: 1px solid var(--dark-blue);
+	border: 1px solid var(--blue);
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	transition: 0.5s ease;
@@ -47,7 +42,7 @@
 	display: flex;
 	align-items: center;
 	padding: 10px;
-	background-color: var(--dark-blue);
+	background-color: var(--blue);
 	color: white;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
@@ -75,7 +70,7 @@
 	display: flex;
 	flex-direction: column;
 	scrollbar-width: thin;
-	scrollbar-color: var(--dark-gray) transparent;
+	scrollbar-color: var(--gray) transparent;
 }
 
 .ChatBody::-webkit-scrollbar {
@@ -87,7 +82,7 @@
 }
 
 .ChatBody::-webkit-scrollbar-thumb {
-	background-color: var(--dark-gray);
+	background-color: var(--gray);
 	border-radius: 4px;
 }
 
@@ -108,7 +103,7 @@
 }
 
 .ConsultantMessage {
-	background-color: var(--dark-blue);
+	background-color: var(--blue);
 	color: white;
 	align-self: flex-start;
 }
@@ -116,21 +111,21 @@
 .ChatInput {
 	display: flex;
 	padding: 10px;
-	border-top: 1px solid var(--dark-blue);
+	border-top: 1px solid var(--blue);
 }
 
 .ChatInput input {
 	width: 70%;
 	flex: 1 1;
 	padding: 5px;
-	border: 1px solid var(--dark-blue);
+	border: 1px solid var(--blue);
 	border-radius: 4px;
 	margin-right: 5px;
 }
 
 .ChatInput button {
 	padding: 5px 10px;
-	background-color: var(--dark-blue);
+	background-color: var(--blue);
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -144,52 +139,52 @@
 /* Media Queries */
 @media (max-width: 1920px) {
 	.HelpWindow {
-			width: 300px;
-			height: 400px;
+		width: 300px;
+		height: 400px;
 	}
 }
 
 @media (max-width: 1024px) {
 	.HelpWindow {
-			width: 250px;
-			height: 350px;
+		width: 250px;
+		height: 350px;
 	}
 }
 
 @media (max-width: 768px) {
 	.HelpWindow {
-			width: 40vw;
-			height: 350px;
+		width: 40vw;
+		height: 350px;
 	}
 
-	.HelpButton{
-			width: 35px;
-			height: 35px;
+	.HelpButton {
+		width: 35px;
+		height: 35px;
 	}
 
-	.HelpWindow{
-			bottom: 45px;
+	.HelpWindow {
+		bottom: 45px;
 	}
 }
 
 @media (max-width: 425px) {
 	.HelpWindow {
-			width: 60vw;
-			height: 350px;
+		width: 60vw;
+		height: 350px;
 	}
 
 	.ChatMessage {
-			font-size: var(--mfs);
+		font-size: var(--mfs);
 	}
 }
 
 @media (max-width: 320px) {
 	.HelpWindow {
-			width: 60vw;
-			height: 300px;
+		width: 60vw;
+		height: 300px;
 	}
 
 	.ChatMessage {
-			font-size: var(--mfs);
+		font-size: var(--mfs);
 	}
 }

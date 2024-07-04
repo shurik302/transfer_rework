@@ -25,11 +25,9 @@ function Registration() {
 			</div>
 
 			<div className='RightPart'>
-				<div className='Welcome'>
-					<h2>{t('WelcomeReg')}</h2>
-					<p>{t('RegText')}</p>
-					<a href='authorisation'>{t('login')}</a>
-				</div>
+				<h2>{t('WelcomeReg')}</h2>
+				<p>{t('RegText')}</p>
+				<a href='authorisation'>{t('login')}</a>
 			</div>
 		</div>
 	);
