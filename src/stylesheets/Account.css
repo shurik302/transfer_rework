@@ -1,13 +1,13 @@
-.Account{
+.Account {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-image: url('../background_images/pic-bus-6.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.WelcomePartAccount{
+.MainContent {
     width: 80%;
     background-color: var(--mbc);
     border-radius: 8px;
@@ -16,5 +16,212 @@
     overflow: hidden;
     justify-content: space-between;
     margin: 60px 10%;
-    
+}
+
+.WelcomePartAccount {}
+
+.UserWelcome {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.UserWelcome h1 {
+    font-size: var(--mbfs);
+    color: var(--mtcb);
+}
+
+.UserWelcome h2 {
+    font-size: var(--mfs);
+    color: var(--mtcb);
+}
+
+.UserName {
+    font-size: var(--mbfs);
+    color: var(--mtcd);
+}
+
+.InfoPartTravel {
+    margin-top: 20px;
+}
+
+.InfoTravelsUser {
+    font-size: var(--mfs);
+    color: var(--dark-gray);
+}
+
+.Travels,
+.PastTravels {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Trip {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.MainInfo {
+    display: flex;
+    align-items: center;
+}
+
+.Time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-right: 20px;
+    font-size: var(--mfs);
+}
+
+.Time div {
+    display: flex;
+    flex-direction: column;
+}
+
+.Route {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: var(--mbfs) !important;
+}
+
+.RouteSymbol {
+    position: relative;
+    width: 20px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.RouteSymbol .Line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: var(--dark-blue);
+}
+
+.RouteSymbol .Circle {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RouteSymbol .Circle .InnerCircle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--mtc);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SmallCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    z-index: 999;
+}
+
+.RouteSymbol .Circle.top {
+    top: 0;
+}
+
+.RouteSymbol .Circle.bottom {
+    bottom: 0;
+}
+
+.AdditionalInfo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: var(--mfs);
+}
+
+.DayTrips {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .ButtonBuyTickets {
+        padding: 5px;
+        border: 2px solid var(--dark-blue);
+        border-radius: 25px;
+        margin-top: 20px;
+    }
+
+    .Trip {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .AdditionalInfo {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 0;
+    }
+
+    .Route {
+        height: 120px;
+    }
+
+    .Time {
+        height: 120px;
+        margin-right: 0;
+    }
+
+    .RouteSymbol {
+        height: 120px;
+    }
+
+    .RouteSymbol .Circle {
+        width: 11px;
+        height: 11px;
+    }
+
+    .RouteSymbol .Circle .InnerCircle {
+        width: 6px;
+        height: 6px;
+    }
+
+    .SmallCircle {
+        width: 3px;
+        height: 3px;
+    }
+
+    .RouteSymbol .Line {
+        width: 2px;
+    }
+
+    .Travels {
+        gap: 20px;
+    }
+}
+
+
+@media (max-width:426px) {
+    .RouteSymbol {
+        margin: 0 10px;
+    }
 }

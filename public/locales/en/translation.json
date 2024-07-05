@@ -70,5 +70,12 @@
   "ProposeBuyTicket": "You can order tickets via the link below:",
   "BuyTickets": "Buy tickets",
   "ProposeLogin": "Login",
-  "Consult":"Consultant"
+  "Consult": "Consultant",
+  "HiUser": "Hi",
+  "PastAndFutureTripsMessage": "Here you can see your upcoming and past trips!",
+  "TicketsMessage1": "Unfortunately, you have no upcoming or past trips, but you can fix that by ordering your first ticket via the link below!",
+  "TicketsMessage2": "Unfortunately, you do not have any upcoming trips, but there are past trips that you can view below! If you liked our service, you can book your tickets again via the link below!",
+  "TicketsMessage3": "You have upcoming trips, please be careful and follow the place and time of departure! Your ticket will be here after the end of the trip!",
+  "TicketsMessage4": "You have upcoming trips, please be careful and follow the place and time of departure! Your ticket will be saved to your ticket collection and can be found here!",
+  "DateInfo":"Travel for: "
 }
