@@ -77,5 +77,11 @@
   "TicketsMessage2": "Unfortunately, you do not have any upcoming trips, but there are past trips that you can view below! If you liked our service, you can book your tickets again via the link below!",
   "TicketsMessage3": "You have upcoming trips, please be careful and follow the place and time of departure! Your ticket will be here after the end of the trip!",
   "TicketsMessage4": "You have upcoming trips, please be careful and follow the place and time of departure! Your ticket will be saved to your ticket collection and can be found here!",
-  "DateInfo":"Travel for: "
+  "DateInfo": "Travel for: ",
+  "TravelsNowInfoText": "Your future travels:",
+  "TravelsPastInfoText": "Your travel history",
+  "ProposeBuyTicketAcc": "You don't have tickets, you can order them at the link below",
+  "ShowAllActiveTrips": "View all trips",
+  "ShowAllPastTrips": "View all travel history",
+  "EmptyHistory": "You have no travel history yet"
 }

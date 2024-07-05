@@ -45,8 +45,6 @@ const Picking = () => {
     setTo(temp);
   };
 
-  
-
   return (
     <div className="picking-container">
       <div className="from-to-container">
