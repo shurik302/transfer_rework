@@ -35,7 +35,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/Registration" element={<Registration />} />
         <Route path="/Authorisation" element={<Authorisation />} />
-        <Route path="/search-results" element={<SearchTickets />} />
+        <Route path="/search" element={<SearchTickets />} />
       </>
     )
   );

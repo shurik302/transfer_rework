@@ -1,0 +1,16 @@
+.SearchTickets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .ticket {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

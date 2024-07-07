@@ -7,6 +7,7 @@ import cities from '../db/cities.json';
 import { useTranslation } from 'react-i18next';
 import uk from 'date-fns/locale/uk';
 import enUS from 'date-fns/locale/en-US';
+import { useNavigate } from 'react-router-dom'; // Додано для навігації
 
 registerLocale('uk', uk);
 registerLocale('en', enUS);
@@ -18,6 +19,7 @@ const Picking = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [passengers, setPassengers] = useState(1);
   const [locale, setLocale] = useState('uk');
+  const navigate = useNavigate(); // Додано для навігації
 
   useEffect(() => {
     if (i18n.language === 'ua') {
@@ -43,6 +45,23 @@ const Picking = () => {
     const temp = from;
     setFrom(to);
     setTo(temp);
+  };
+
+  const handleSearch = () => {
+    console.log('Search parameters:', {
+      from: from.value,
+      to: to.value,
+      startDate: startDate,
+      passengers: passengers
+    });
+    navigate('/search', {
+      state: {
+        from: from.value,
+        to: to.value,
+        startDate: startDate.toISOString(), // Передаємо дату у форматі ISO
+        passengers: passengers
+      }
+    });
   };
 
   return (
@@ -121,7 +140,7 @@ const Picking = () => {
             <button onClick={() => setPassengers(Math.min(passengers + 1, 120))}>+</button>
           </div>
         </div>
-        <button className="picking-search">{t('Search')}</button>
+        <button className="picking-search" onClick={handleSearch}>{t('Search')}</button>
       </div>
     </div>
   );
