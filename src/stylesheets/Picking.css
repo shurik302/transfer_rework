@@ -16,10 +16,6 @@
   margin: 0;
 }
 
-.picking-passengers input[type=number] {
-  -moz-appearance: textfield;
-}
-
 .from-to-container {
   display: flex;
   align-items: flex-end;

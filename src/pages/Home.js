@@ -20,25 +20,25 @@ const Home = () => {
         </div>
         <div className='InfoAndLinks'>
           <div className='AdditionalLinks'>
-            <a href='#' className='FirstAddLink AddLink'>
+            <a href='/travels' className='FirstAddLink AddLink'>
               <i class="fa-solid fa-ticket"></i>
               <span>{t('FirstAddLink')}</span>
             </a>
-            <a href='#' className='SecondAddLink AddLink'>
+            <a href='/map' className='SecondAddLink AddLink'>
               <i class="fa-solid fa-route"></i>
               <span>{t('SecondAddLink')}</span>
             </a>
-            <a href='#' className='ThirdAddLink AddLink'>
+            <a href='/help' className='ThirdAddLink AddLink'>
               <i class="fa-solid fa-question"></i>
               <span>{t('ThirdAddLink')}</span>
             </a>
-            <a href='#' className='ForthAddLink AddLink'>
+            <a href='help' className='ForthAddLink AddLink'>
               <i class="fa-solid fa-handshake-angle"></i>
               <span>{t('FourthAddLink')}</span>
             </a>
           </div>
           <div className='TR' />
-          <a href='#' className='MapSegment'>
+          <a href='/map' className='MapSegment'>
             <div className='ImageMap'>
               <img src={ImageMap} />
             </div>

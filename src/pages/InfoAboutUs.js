@@ -6,7 +6,7 @@ function InfoAboutUs() {
   const { t } = useTranslation();
   return (
     <div className='InfoAboutUs'>
-      <div className='MainPart'>
+      <div className='MainPartIAU'>
         <div className='WelcomeAbout'>
           <h2 className='WhoWe'>{t('WhoWe')}</h2>
           <h1 className='WeAre'>{t('WeAre')}</h1>
@@ -46,6 +46,18 @@ function InfoAboutUs() {
             <div className='TextTitlePart'>
               <span className=''>
                 {t('TextTitlePartT')}
+              </span>
+            </div>
+          </div>
+          <div className='TitlePart'>
+            <div className='NameTitlePart'>
+              <span className=''>
+                {t('NameTitlePartTh')}
+              </span>
+            </div>
+            <div className='TextTitlePart'>
+              <span className=''>
+                {t('TextTitlePartTh')}
               </span>
             </div>
           </div>

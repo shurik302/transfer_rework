@@ -1,20 +1,102 @@
 [
   {
-    "value": "Berlin"
+    "value": "Berlin",
+    "ukrainian": "Берлін"
   },
   {
-    "value": "Düsseldorf"
+    "value": "Düsseldorf",
+    "ukrainian": "Дюссельдорф"
   },
   {
-    "value": "Kyiv"
+    "value": "Kyiv",
+    "ukrainian": "Київ"
   },
   {
-    "value": "Warsaw"
+    "value": "Warsaw",
+    "ukrainian": "Варшава"
   },
   {
-    "value": "Paris"
+    "value": "Paris",
+    "ukrainian": "Париж"
   },
   {
-    "value": "London"
+    "value": "London",
+    "ukrainian": "Лондон"
+  },
+  {
+    "value": "Amsterdam",
+    "ukrainian": "Амстердам"
+  },
+  {
+    "value": "Madrid",
+    "ukrainian": "Мадрид"
+  },
+  {
+    "value": "Rome",
+    "ukrainian": "Рим"
+  },
+  {
+    "value": "Vienna",
+    "ukrainian": "Відень"
+  },
+  {
+    "value": "Barcelona",
+    "ukrainian": "Барселона"
+  },
+  {
+    "value": "Milan",
+    "ukrainian": "Мілан"
+  },
+  {
+    "value": "Budapest",
+    "ukrainian": "Будапешт"
+  },
+  {
+    "value": "Prague",
+    "ukrainian": "Прага"
+  },
+  {
+    "value": "Hamburg",
+    "ukrainian": "Гамбург"
+  },
+  {
+    "value": "Munich",
+    "ukrainian": "Мюнхен"
+  },
+  {
+    "value": "Frankfurt",
+    "ukrainian": "Франкфурт"
+  },
+  {
+    "value": "Lviv",
+    "ukrainian": "Львів"
+  },
+  {
+    "value": "Odesa",
+    "ukrainian": "Одеса"
+  },
+  {
+    "value": "Kharkiv",
+    "ukrainian": "Харків"
+  },
+  {
+    "value": "Dnipro",
+    "ukrainian": "Дніпро"
+  },
+  {
+    "value": "Zaporizhzhia",
+    "ukrainian": "Запоріжжя"
+  },
+  {
+    "value": "Khmelnytskyi",
+    "ukrainian": "Хмельницький"
+  },
+  {
+    "value": "Chernivtsi",
+    "ukrainian": "Чернівці"
+  },
+  {
+    "value": "Vinnytsia",
+    "ukrainian": "Вінниця"
   }
 ]

@@ -3,7 +3,7 @@ import Select from 'react-select';
 import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import '../stylesheets/Picking.css';
-import cities from '../db/Cities.json';
+import cities from '../db/cities.json';
 import { useTranslation } from 'react-i18next';
 import uk from 'date-fns/locale/uk';
 import enUS from 'date-fns/locale/en-US';
@@ -36,7 +36,7 @@ const Picking = () => {
 
   const cityOptions = cities.map(city => ({
     value: city.value,
-    label: t(city.value)
+    label: i18n.language === 'ua' ? city.ukrainian : city.value
   }));
 
   const swapCities = () => {

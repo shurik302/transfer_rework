@@ -244,7 +244,7 @@
     }
 
     .TravelsAcc, .PastTravelsAcc {
-        width: calc(100% - 0px);
+        width: calc(100% - 40px);
     }
 }
 
