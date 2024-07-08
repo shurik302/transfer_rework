@@ -14,8 +14,8 @@ registerLocale('en', enUS);
 
 const Picking = () => {
   const { t, i18n } = useTranslation();
-  const [from, setFrom] = useState({ value: 'Kyiv', label: t('Kyiv') });
-  const [to, setTo] = useState({ value: 'Warsaw', label: t('Warsaw') });
+  const [from, setFrom] = useState({ value: 3, label: t('Kyiv') });
+  const [to, setTo] = useState({ value: 4, label: t('Warsaw') });
   const [startDate, setStartDate] = useState(new Date());
   const [passengers, setPassengers] = useState(1);
   const [locale, setLocale] = useState('uk');
@@ -37,7 +37,7 @@ const Picking = () => {
   };
 
   const cityOptions = cities.map(city => ({
-    value: city.value,
+    value: city.id,
     label: i18n.language === 'ua' ? city.ukrainian : city.value
   }));
 

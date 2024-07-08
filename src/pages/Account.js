@@ -1,12 +1,17 @@
-// Account.js
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import moment from 'moment';
 import '../stylesheets/Account.css';
 import { trips } from '../db/tickets';
+import cities from '../db/cities.json';
+
+const getCityNameById = (id, language) => {
+  const city = cities.find(city => city.id === id);
+  return city ? (language === 'ua' ? city.ukrainian : city.value) : '';
+};
 
 function Account() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const now = moment();
   const [showAllActiveTrips, setShowAllActiveTrips] = useState(false);
   const [showAllPastTrips, setShowAllPastTrips] = useState(false);
@@ -89,12 +94,12 @@ function Account() {
           <div className='Route'>
             <div className='From'>
               <div className='Place'>
-                <span>{trip.from}</span>
+                <span>{getCityNameById(trip.from, i18n.language)}</span>
               </div>
             </div>
             <div className='To'>
               <div className='Place'>
-                <span>{trip.to}</span>
+                <span>{getCityNameById(trip.to, i18n.language)}</span>
               </div>
             </div>
           </div>

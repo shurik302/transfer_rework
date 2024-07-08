@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../stylesheets/SearchTickets.css';
@@ -10,6 +10,8 @@ function SearchTickets() {
   const location = useLocation();
   const { from, to, startDate, passengers } = location.state || {};
 
+  const [groupedTravels, setGroupedTravels] = useState({});
+
   useEffect(() => {
     console.log('Received search parameters:', {
       from,
@@ -19,34 +21,47 @@ function SearchTickets() {
     });
   }, [from, to, startDate, passengers]);
 
-  const filteredTravels = travels.filter(travel => {
-    const travelDate = new Date(travel.date_departure.split('.').reverse().join('-'));
-    const searchStartDate = new Date(startDate);
-    searchStartDate.setHours(0, 0, 0, 0); // Встановлюємо час на 00:00
+  useEffect(() => {
+    const filteredTravels = travels.filter(travel => {
+      const travelDate = new Date(travel.date_departure.split('.').reverse().join('-'));
+      const searchStartDate = new Date(startDate);
+      searchStartDate.setHours(0, 0, 0, 0); // Встановлюємо час на 00:00
 
-    const passesFilter = travel.fromEN === from && travel.toEN === to && travelDate >= searchStartDate;
-
-    console.log('Checking travel:', {
-      from: travel.fromEN,
-      to: travel.toEN,
-      date: travel.date_departure,
-      travelDate: travelDate.toISOString(),
-      searchStartDate: searchStartDate.toISOString(),
-      passesFilter: passesFilter
+      return travel.from === from && travel.to === to && travelDate >= searchStartDate;
     });
 
-    return passesFilter;
-  });
+    filteredTravels.sort((a, b) => {
+      const dateA = new Date(a.date_departure.split('.').reverse().join('-') + 'T' + a.departure);
+      const dateB = new Date(b.date_departure.split('.').reverse().join('-') + 'T' + b.departure);
+      return dateA - dateB;
+    });
+
+    const grouped = filteredTravels.reduce((acc, travel) => {
+      const dateKey = travel.date_departure;
+      if (!acc[dateKey]) {
+        acc[dateKey] = [];
+      }
+      acc[dateKey].push(travel);
+      return acc;
+    }, {});
+
+    setGroupedTravels(grouped);
+  }, [from, to, startDate]);
 
   useEffect(() => {
-    console.log('Filtered travels:', filteredTravels);
-  }, [filteredTravels]);
+    console.log('Grouped travels:', groupedTravels);
+  }, [groupedTravels]);
 
   return (
     <div className='SearchTickets'>
-      {filteredTravels.length > 0 ? (
-        filteredTravels.map((travel, index) => (
-          <Ticket key={index} travel={travel} passengers={passengers} />
+      {Object.keys(groupedTravels).length > 0 ? (
+        Object.keys(groupedTravels).map(date => (
+          <div key={date} className="date-section">
+            <h2>{t('Travels_on')}: {date}</h2>
+            {groupedTravels[date].map((travel, index) => (
+              <Ticket key={index} travel={travel} passengers={passengers} />
+            ))}
+          </div>
         ))
       ) : (
         <div>{t('No tickets found')}</div>

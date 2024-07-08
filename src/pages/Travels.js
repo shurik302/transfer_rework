@@ -1,13 +1,18 @@
-// Travels.js
 import React from 'react';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 import '../stylesheets/Travels.css';
 import SadSmile from '../images/sad_smile.png';
 import { trips } from '../db/tickets';
+import cities from '../db/cities.json';
+
+const getCityNameById = (id, language) => {
+  const city = cities.find(city => city.id === id);
+  return city ? (language === 'ua' ? city.ukrainian : city.value) : '';
+};
 
 function Travels() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const now = moment();
 
   const isTripActive = (trip) => {
@@ -71,12 +76,12 @@ function Travels() {
                           <div className='Route'>
                             <div className='From'>
                               <div className='Place'>
-                                <span>{trip.from}</span>
+                                <span>{getCityNameById(trip.from, i18n.language)}</span>
                               </div>
                             </div>
                             <div className='To'>
                               <div className='Place'>
-                                <span>{trip.to}</span>
+                                <span>{getCityNameById(trip.to, i18n.language)}</span>
                               </div>
                             </div>
                           </div>

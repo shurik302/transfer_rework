@@ -27,10 +27,10 @@ function Footer() {
             <i className={`fa-solid fa-chevron-down ${openMenu === 'middle' ? 'open' : ''}`}></i>
           </div>
           <div className={`LinksFooter ${openMenu === 'middle' ? 'open' : ''}`}>
-            <a href="#link1">{t('F_Link')}</a>
-            <a href="#link2">{t('S_Link')}</a>
-            <a href="#link3">{t('T_Link')}</a>
-            <a href="#link4">{t('Th_Link')}</a>
+            <a href="/map">{t('F_Link')}</a>
+            <a href="/travels">{t('S_Link')}</a>
+            <a href="/routes">{t('T_Link')}</a>
+            <a href="/help">{t('Th_Link')}</a>
           </div>
         </div>
         <div className='MiddleRightFooter'>
@@ -39,10 +39,10 @@ function Footer() {
             <i className={`fa-solid fa-chevron-down ${openMenu === 'middleRight' ? 'open' : ''}`}></i>
           </div>
           <div className={`LinksFooter ${openMenu === 'middleRight' ? 'open' : ''}`}>
-            <a href="#link1">{t('F_Link')}</a>
-            <a href="#link2">{t('S_Link')}</a>
-            <a href="#link3">{t('T_Link')}</a>
-            <a href="#link4">{t('Th_Link')}</a>
+            <a href="/help">{t('F_Link_S')}</a>
+            <a href="/info-about-us">{t('S_Link_S')}</a>
+            <a href="/rules">{t('T_Link_S')}</a>
+            <a href="/help">{t('Th_Link_S')}</a>
           </div>
         </div>
         <div className='RightFooter'>
@@ -51,10 +51,8 @@ function Footer() {
             <i className={`fa-solid fa-chevron-down ${openMenu === 'right' ? 'open' : ''}`}></i>
           </div>
           <div className={`LinksFooter ${openMenu === 'right' ? 'open' : ''}`}>
-            <a href="#link1">{t('F_Link')}</a>
-            <a href="#link2">{t('S_Link')}</a>
-            <a href="#link3">{t('T_Link')}</a>
-            <a href="#link4">{t('Th_Link')}</a>
+            <a href='mailto:bustravelhelp@gmail.com'> bustravelhelp@gmail.com</a>
+            <a href="tel:+380991111111">+380991111111</a>
           </div>
           <div className='SocialMedia'>
             <a href=''><i className="fa-brands fa-instagram"></i></a>
