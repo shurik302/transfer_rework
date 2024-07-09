@@ -1,0 +1,54 @@
+.BuyTicketUser{
+  padding: 60px 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+
+.MainInfoBuyTicketUser {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.TicketInfoBuy, .AddInfoTicketBuy {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.DataUser input,
+.DataContactUser input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.picking-passengers {
+  display: flex;
+  align-items: center;
+}
+
+.picking-passengers button {
+  width: 30px;
+  height: 30px;
+}
+
+.picking-passengers input {
+  width: 40px;
+  text-align: center;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.country-code-select {
+  margin-right: 10px;
+  width: 80px;
+}

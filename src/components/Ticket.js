@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import '../stylesheets/Ticket.css';
 import cities from '../db/cities.json';
 
@@ -11,6 +12,13 @@ const getCityNameById = (id, language) => {
 const Ticket = ({ travel, passengers }) => {
   const { t, i18n } = useTranslation();
   const language = i18n.language;
+  const navigate = useNavigate();
+
+  const handleBuyTicket = () => {
+    navigate('/buy-ticket', {
+      state: { travel, passengers, language }
+    });
+  };
 
   return (
     <div className='ticket'>
@@ -44,9 +52,9 @@ const Ticket = ({ travel, passengers }) => {
       </div>
       <div className='PriceInfoTicket'>
         <div className='PriceTicket'><span>{i18n.language === 'ua' ? `${travel.priceUA} UAH` : `${travel.priceEN} EUR`}</span></div>
-        <a href='' className='BuyTicket'>
+        <button onClick={handleBuyTicket} className='BuyTicket'>
           <span className='BuyTicketText'>{t('BuyTicketText')}</span>
-        </a>
+        </button>
       </div>
     </div>
   );

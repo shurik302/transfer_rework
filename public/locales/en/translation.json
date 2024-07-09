@@ -229,5 +229,16 @@
   "BuyTicketText": "Buy ticket",
   "hours": "hours",
   "Travels_on": "Travels on",
-  "Baggage": "baggage"
+  "Baggage": "baggage",
+  "BuyTicketTextUser" : "Registration and payment of the ticket",
+  "FirstName": "First name",
+  "LastName": "Last name",
+  "HandLuggage": "Hand luggage",
+  "Free": "Free",
+  "SmallBaggage": "Small baggage",
+  "LargeBaggage": "Large baggage",
+  "Phone":"Phone",
+  "ConfirmPurchase": "Go to pay for the ticket"
+
+  
 }

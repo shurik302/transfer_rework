@@ -137,10 +137,12 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  border: none;
 }
 
 .BuyTicketText {
   font-size: var(--mfs);
+  color: var(--mtc);
 }
 
 @media (max-width:1024px) {

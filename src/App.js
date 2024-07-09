@@ -13,6 +13,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy.js';
 import Authorisation from './pages/Authorisation.js';
 import Registration from './pages/Registration.js';
 import SearchTickets from './pages/SearchTickets.js';
+import BuyTicket from './pages/BuyTicket.js';
 /* COMPONENTS */
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -33,9 +34,10 @@ function App() {
         <Route path="/rules" element={<Rules />} />
         <Route path="/info-about-us" element={<InfoAboutUs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/Registration" element={<Registration />} />
-        <Route path="/Authorisation" element={<Authorisation />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/authorisation" element={<Authorisation />} />
         <Route path="/search" element={<SearchTickets />} />
+        <Route path="/buy-Ticket" element={<BuyTicket />} />
       </>
     )
   );

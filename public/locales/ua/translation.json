@@ -233,5 +233,14 @@
   "BuyTicketText":"Купити квиток",
   "hours":"годин",
   "Travels_on": "Подорожі на",
-  "Baggage": "багаж"
+  "Baggage": "багаж",
+  "BuyTicketTextUser" : "Оформлення та оплата квитка",
+  "FirstName": "Ім'я",
+  "LastName": "Прізвище",
+  "HandLuggage": "Ручна поклажа",
+  "Free": "Безкоштовно",
+  "SmallBaggage": "Малий багаж",
+  "LargeBaggage": "Великий багаж",
+  "Phone": "Телефон",
+  "ConfirmPurchase": "Перейти до оплати квитка"
 }
