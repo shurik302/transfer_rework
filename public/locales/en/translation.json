@@ -227,18 +227,20 @@
   "Subheading_Help_Contact": "Contact Information",
   "Text_subheading_Help_Contact_1": "For additional information and support, contact our support service via [online support](#), email bustravelhelp@gmail.com, or call +380991111111.",
   "BuyTicketText": "Buy ticket",
-  "hours": "hours",
+  "hours": " hours",
   "Travels_on": "Travels on",
   "Baggage": "baggage",
-  "BuyTicketTextUser" : "Registration and payment of the ticket",
+  "BuyTicketTextUser": "Registration and payment of the ticket",
   "FirstName": "First name",
   "LastName": "Last name",
   "HandLuggage": "Hand luggage",
   "Free": "Free",
   "SmallBaggage": "Small baggage",
   "LargeBaggage": "Large baggage",
-  "Phone":"Phone",
-  "ConfirmPurchase": "Go to pay for the ticket"
-
-  
+  "Phone": "Phone",
+  "ConfirmPurchase": "Order the ticket",
+  "NameTitleBuyTicketNameUser": "Information about the passenger",
+  "NameTitleBuyTicketDataBaggage": "Baggage",
+  "NameTitleBuyTicketDataDataContactUser":"Additional information for communication",
+  "DurationTicket":"Duration: "
 }
